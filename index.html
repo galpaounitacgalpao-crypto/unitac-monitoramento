@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNITAC - Matriz de Monitoramento</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:Arial,sans-serif;margin:0;background:#f4f6f8;color:#17202a}
+header{background:#111827;color:#fff;padding:22px 28px}
+main{padding:24px;max-width:1200px;margin:auto}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card{background:#fff;border-radius:14px;padding:18px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.n{font-size:28px;font-weight:800;margin-top:6px}
+.yellow{border-left:6px solid #eab308}
+.blue{border-left:6px solid #3b82f6}
+.green{border-left:6px solid #22c55e}
+.red{border-left:6px solid #ef4444}
+table{width:100%;margin-top:22px;background:#fff;border-collapse:collapse}
+th,td{padding:14px;text-align:left;border-bottom:1px solid #eee}
+.pill{padding:6px 10px;border-radius:999px;font-weight:700;font-size:12px}
+.py{background:#fef3c7;color:#92400e}
+.pb{background:#dbeafe;color:#1d4ed8}
+.pg{background:#dcfce7;color:#166534}
+.pr{background:#fee2e2;color:#991b1b}
+@media(max-width:700px){
+.cards{grid-template-columns:repeat(2,1fr)}
+table{display:block;overflow-x:auto;white-space:nowrap;font-size:13px}
+}
+</style>
+</head>
+<body>
+<header><strong>UNITAC</strong> - Matriz de Monitoramento</header>
+<main>
+<h1>Monitoramento de carregamentos</h1>
+<div class="cards">
+<div class="card yellow"><div>A caminho</div><div class="n">0</div></div>
+<div class="card blue"><div>Em entrega</div><div class="n">0</div></div>
+<div class="card green"><div>Finalizados</div><div class="n">0</div></div>
+<div class="card red"><div>Atrasados</div><div class="n">0</div></div>
+</div>
+<table>
+<thead>
+<tr><th>Carga</th><th>Motorista</th><th>Rota</th><th>Prazo</th><th>Status</th><th>Progresso</th></tr>
+</thead>
+<tbody>
+<tr><td>Exemplo 001</td><td>Motorista de teste</td><td>SP - Brasilia</td><td>Hoje 18:00</td><td><span class="pill py">A CAMINHO</span></td><td>82/120</td></tr>
+<tr><td>Exemplo 002</td><td>Motorista de teste</td><td>SP - MG</td><td>Hoje 16:30</td><td><span class="pill pb">EM ENTREGA</span></td><td>45/60</td></tr>
+<tr><td>Exemplo 003</td><td>Motorista de teste</td><td>SP - RJ</td><td>Hoje 14:00</td><td><span class="pill pg">FINALIZADO</span></td><td>120/120</td></tr>
+</tbody>
+</table>
+</main>
+</body>
+</html>
